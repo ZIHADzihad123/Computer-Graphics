@@ -1,0 +1,73 @@
+DS    : directly kono variable store kore na.arek resister theke value receive kore
+AX    : data segment theke value store korte pare
+DX    :j kono value rakhlei ascii te print korbe
+AH,2  :(2 die print function bujhay),(1 die input function bujhay) ,(9 hole string output dewa bujhay)
+INT 21H   :(21H hole ,AH resister er value check kore and DX e pathay dey)
+al   : input always al e save hobe
+bl   : b er low series e save hobe
+bh   : b er high seriesw save hove
+***D series resister is used for printing
+dl,10 : new line er ekdom nicher theke output show korano
+dl,13 : new line er ekdom 1st theke output shoew korano buhjahy 
+DUP(?) = array er every indewx er value null
+*****string er last e '$' boshate hoe
+string e move korar command hocche lea
+cx,26    = ei resister die loop er iteration number hobe.cs,26 die 26 bar looping hobe
+level1 :   = eta die loop initialization bujhay.loop er name bujhay.
+SI   = address point korar jonno use kora hoe.mane altime index hishebe use hoeb
+
+---------------------------------------------------------------------
+AX =arithamtic,logic,data transfer logic
+AL/ax = mul,div
+BX = address resistor
+CX = loop counter,rotating shifting work,string operation
+DX =mul,div,i/o(print korte hole)
+
+**memory is colllection of byte
+CS =program code gula ekhane load hoe
+DS =data gula ekhane load hoe
+SS =stack gula ekhane load hoe
+ES =ekta data segment e data set na hole ei extra segment 2nd data segment hishebe use korte parbo
+SP,BP,SI,DI = point memory location
+SP = access data on stack
+BP = access data on stack+aro segment e access korte parbo
+SI =point memory location in data segment
+DI = point memory location+string operation
+IP = foor data access
+CS = contain segment number
+IP = contain offset number,next instruction k point kore,ip k direct manipulate kora jabe na
+Flags = micraprocessor er bivinno status k indicate kore
+status flag = 0/ZF hole 1(true)
+              0/ZF na hole 0(false)
+control flag =status flag 1 hole enable
+                          0 hole disable
+
+chasp 5 :
+---------
+
+Sign flag  :  SF = 1 When MSB 1
+              SF = 0 when MSB 0
+Carry Flag :  CF = 1 for carry out
+              CF = 0 for no carry
+              **for Neg = CF =1 when result is not 0
+Parity Flag : PF = 1 for even 1
+              PF = 0 for odd 1
+Zero Flag  :  ZF = 1 for result = 0
+              ZF = 0 for result =1
+Overfolw   : 
+ 
+*signed :
+  8-bit range (-128 to 127 )
+  16 bit range  (-32768 to 32767)
+  signed overflow hole  OF = 1 hoe
+  *expectation er baire kisu hole over folew  1 hobe
+*unsigned :
+  8-bit range (0 to 255 )
+  16 bit range  (0 to 65535)
+  unsigned overflow hole CF = 1 hoe
+
+    
+----------------------------------------------------------------------
+xchg bl,bh = exchange keyword
+equ  = constant bujhay
+NEG = kono nymber er 2s complement kore

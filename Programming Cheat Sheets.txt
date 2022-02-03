@@ -1,0 +1,9 @@
+Java Cheat sheets :
+https://introcs.cs.princeton.edu/java/11cheatsheet/
+C# :
+https://www.codecademy.com/learn/learn-c-sharp/modules/csharp-methods/cheatsheet
+https://simplecheatsheet.com/tag/c-cheat-sheet-1/
+youtube: https://youtube.com/playlist?list=PLLWMQd6PeGY12yNE714jffLFnMVZCwvvZ
+
+Dataabse cheat sheet :
+https://simplecheatsheet.com/tag/database-cheat-sheet/

@@ -1,0 +1,129 @@
+mkdir lab2 = for making directory
+cd lab2    = lab2 te dhukbe
+pwd        = your file location
+touch file2.txt= to create new file2 
+cat file2.txt = file1 er content show kore
+nano/vi file2.txt = die file2 er vitore text edit kora bujhay
+(mostly amra nano use korbo)
+exit dite cntrl+x,Y,enter
+echo 121221 >> file2.txt  = file er last e add korte caile
+cat file1.txt file.txt >> merge.txt = 2 ta file k merge korar cay
+mv dir2 ./dir1/ = dir2 k dir1 e move korbo
+cp file1.txt file1-backup.txt = file1 er text file1 er backup e copy hobe
+**sudo apt-get install tree = tree install korar jonno.
+rmdir dir1 = empty dir1 delete hobe
+rmdir -R dir1 = file shoho dir1 delete hobe.
+
+lab 1
+---------
+commands :
+
+uname -r  [kernel version you have.]
+uname -m  [architecture you are running]
+ls        [show all folders and files of current directory]
+ls  -a    [show all folders and files of current directory+hidden file]
+pwd       [your file location//print working directory]
+mkdir directory_name  [create a directory]
+mkdir dir1 dir2 dir3  [create multiple directory]
+touch file_name       [create a file]
+
+
+lab 2
+---------
+commands :
+
+cat > test.txt                   [file er lekha ]
+cat  test.txt                    [file er vitorer content show kora]
+cat a.txt >> b.txt               [a.txt file er info gula b.txt file e move kora]
+echo $(date) >> a.txt            [a.txt  a date gie save hobe]
+cat a.txt b.txt >> merged.txt    [file merge kore merged.txt te show]
+cp ex1 ex2                       [ex1 er value copy hoe epx2 te boshay]
+mv current_location new_location [for moving file]
+
+
+lab 3
+----------
+commands :
+ 
+ uname –n           [Tells machine name in network]
+ calender :
+ ------------
+ cal                [To display the calendar]
+ cal -3             [To display the previous, current and next month]
+ cal –s             [To display the current month starting from Sunday]
+ cal –m             [To display the current month starting from Monday]
+
+ date :
+ -----------
+ date               [To display system date]
+ date +%m           [To display month number]
+ date +%h%m         [To display month name and month number]
+ date +%H           [To display the time in hours]
+ date +%M           [To display the time in minute]
+ date +%S           [To display the time in second]
+ date +%r           [To display the time in AM or PM]
+ date +%d           [To display date of month]
+
+
+ whoami             [To display the login user details]
+ logname            [To display my login id]
+ history            [To display history of search]
+
+
+lab 4
+---------
+commands :
+
+wc filename       [To show number of words, lines and bytes]
+wc –c filename    [To display the number of characters in a file]
+wc –l filename    [To display the number of lines]
+wc –w filename    [To display the number of words]
+nl filename       [To display number of lines with numbers]
+nl –i5 filename   [To increment the line number by 5]
+sort
+----
+sort –r filename  [To reverse and sort the content of file]
+sort –u filename  [To sort and remove the duplicate]
+sort -K1 filename [column wise sort korbe]
+
+cut
+----
+cut -d. -f1 filename [first column k cut korse]
+cut -d. -f1,3 filename [first and third column k cut korse]
+cut -d. -f1-3 filename [first to third column k cut korse]
+cut -d. -f1-3 filename > student.txt [first to third column k cut kore student.txt te save korse]
+
+paste :
+-------
+paste file1 file2 > merge.txt [file 2 ta merge hoe show kore]
+
+head
+----
+head filename     [To display first 10 lines]
+head -6c filename [To display first 6 characters]
+tail filename     [To display last 10 lines]
+
+
+
+
+lab 5:
+-------
+grep -o Dhaka sample.txt  [display only matched string]
+grep -v Dhaka sample.txt  [show without the selected item]
+grep -i Dhaka sample.txt  [case sensitive]
+grep -o"017" sample.txt   [display only matched string]
+grep -o"017[0-9]*" sample.txt   [display only matched string]
+
+c++ code
+-----------
+touch cprog.c
+nano cprog.c
+gcc cprog.c -o cprog
+./cprog 
+
+file permission :
+----------------
+chmod o-x file.txt    [other theke x permission minus kore disi]
+chmod o+x file.txt    [other e x permission add kore disi]
+chmod g-r file.txt    [group theke r(read) permission minus kore disi]
+chmod +x file.txt     [file er shob gulate x permission add kore disi]

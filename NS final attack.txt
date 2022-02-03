@@ -1,0 +1,14 @@
+go : malware trafic analysis
+
+unzip : unzip ------
+
+run the pcap:
+----------------
+sudo tcpreplay -i  enp0s8 -M 10 ------.pcap
+
+sudo find /-name snorf.conf
+
+file filename
+
+virus total analyse suspicious files
+

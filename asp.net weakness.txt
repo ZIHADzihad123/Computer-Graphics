@@ -1,0 +1,22 @@
+Weakness :
+----------
+1.IEnumurable :
+public IEnumurable<string> Get()
+{
+    return new string[] { "value1","value2" }
+}
+
+public void  Post([frombody] string value)
+{
+    
+}
+
+
+
+2.IHttpActionResult :
+The IHttpActionResult comprises a collection of custom in-built
+ responses that include: Ok, BadRequest, Exception, Conflict, Redirect,
+ NotFound, and Unauthorized. The IHttpActionResult interface contains 
+just one method.
+
+3.HttpConfiguration
